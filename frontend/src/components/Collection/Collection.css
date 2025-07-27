@@ -1,0 +1,50 @@
+.rakhi-collection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rakhi-collection h1 {
+  color: #e8530ef0;
+  font-weight: 500;
+}
+.rakhi-collection-text {
+  max-width: 60%;
+  columns: #808080;
+}
+.rakhi-collection-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  margin: 20px 0px;
+  overflow-x: scroll;
+}
+.rakhi-collection-list::-webkit-scrollbar {
+  display: none;
+}
+.rakhi-collection-list-item {
+  position: relative;
+  display: inline-block;
+}
+.rakhi-collection-list-item img {
+  width: 7.5vw;
+  min-width: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+
+.rakhi-collection-list-item p {
+  margin-top: 10px;
+  color: #747474;
+  font-size: max(1.4vw, 16px);
+  cursor: pointer;
+}
+.rakhi-collection hr {
+  margin: 10px 0px;
+  height: 2px;
+  background: #e2e2e2;
+  border: none;
+}
