@@ -1,8 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// 🔧 ध्यान दें: base path में GitHub repo का नाम आएगा
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/threads of love/' : '/',
   plugins: [react()],
+  base: '/Threads-of-love/', // 👈 यही जरूरी है!
 })
+
