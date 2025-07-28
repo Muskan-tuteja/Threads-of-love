@@ -2,7 +2,7 @@ import React from "react";
 import "./Collection.css";
 import { rakhi_collection } from "../../assets/assests";
 
-const Collection = () => {
+const Collection = ({category,setCategory}) => {
   return (
     <div className="rakhi-collection" id="rakhi-collection">
       <h1>Rakhi Collection</h1>
@@ -14,8 +14,9 @@ const Collection = () => {
       <div className="rakhi-collection-list">
         {rakhi_collection.map((item, index) => {
           return (
-            <div key={index} className="rakhi-collection-list-item">
-              <img src={item.rakhi_image} alt="" />
+            <div onClick={()=>setCategory(prev=>prev===item.rakhi_name?"All":item.rakhi_name)}key={index} className="rakhi-collection-list-item">
+              
+              <img className={category === item.rakhi_name ? "active": ""} src={item.rakhi_image} alt="" />
               <p>{item.rakhi_name}</p>
             </div>
           );
@@ -27,3 +28,4 @@ const Collection = () => {
 };
 
 export default Collection;
+
