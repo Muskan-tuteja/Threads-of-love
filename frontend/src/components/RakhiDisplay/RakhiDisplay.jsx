@@ -10,7 +10,8 @@ const RakhiDisplay = ({ category }) => {
       <h2>Trending Gift</h2>
       <div className="rakhi-display-list">
         {rakhi_list.map((item,index) => {
-          return (
+          if(category==="All" || category===item.category){
+            return (
             <RakhiItem
               key={index}
               id={item._id}
@@ -20,6 +21,9 @@ const RakhiDisplay = ({ category }) => {
               image={item.image}
             />
           );
+
+          }
+          
         })}
       </div>
     </div>

@@ -1,29 +1,31 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "./RakhiItem.css";
 import { assests } from "../../assets/assests";
+import { StoreContext } from "../../context/StoreContext";
 
 const RakhiItem = ({ id, name, price, description, image }) => {
-  const [itemCount, setItemCount] = useState(0);
+  
+  const {cartItems,addToCart,removeFromCart} = useContext(StoreContext)
   return (
     <div className="rakhi-item">
       <div className="rakhi-item-img-container">
         <img className="rakhi-item-image" src={image} />
-        {!itemCount ? (
+        {!cartItems[id]? (
           <img
             className="add"
-            onClick={() => setItemCount((prev) => prev + 1)}
+            onClick={() => addToCart(id)}
             src={assests.add_icon_white}
           />
         ) : (
           <div className="rakhi-item-counter">
             <img
-              onClick={() => setItemCount((prev) => prev - 1)}
+              onClick={() => removeFromCart(id)}
               src={assests.remove_icon_red}
               alt=""
             />
-            <p>{itemCount}</p>
+            <p>{cartItems[id]}</p>
             <img
-              onClick={() => setItemCount((prev) => prev + 1)}
+              onClick={() =>addToCart(id)}
               src={assests.add_icon_green}
               alt=""
             />
