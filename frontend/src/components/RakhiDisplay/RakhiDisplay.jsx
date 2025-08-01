@@ -5,25 +5,25 @@ import RakhiItem from "../RakhItem/RakhiItem";
 
 const RakhiDisplay = ({ category }) => {
   const { rakhi_list } = useContext(StoreContext);
+  
+
   return (
     <div className="rakhi-display" id="rakhi-display">
-      <h2>Trending Gift</h2>
+      <h2>Trending Now</h2>
       <div className="rakhi-display-list">
-        {rakhi_list.map((item,index) => {
-          if(category==="All" || category===item.category){
+        {rakhi_list.map((item, index) => {
+          if (category === "All" || category === item.category) {
             return (
-            <RakhiItem
-              key={index}
-              id={item._id}
-              name={item.name}
-              description={item.description}
-              price={item.price}
-              image={item.image}
-            />
-          );
-
+              <RakhiItem
+                key={index}
+                id={item._id}
+                name={item.name}
+                description={item.description}
+                price={item.price}
+                image={item.image}
+              />
+            );
           }
-          
         })}
       </div>
     </div>

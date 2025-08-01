@@ -1,42 +1,49 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { assests } from "../../assets/assests";
-const Navbar = () => {
+import { Link } from "react-router-dom";
+
+const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("Home");
   return (
     <div className="navbar">
       <img src={assests.logo} alt="" className="logo" />
       <ul className="navbar-menu">
-        <li
+        <Link
+          to="/"
           onClick={() => setMenu("Home")}
           className={menu === "Home" ? "active" : ""}
         >
           <b>Home</b>
-        </li>
-        <li
-          onClick={() => setMenu("Rakhi Collection")}
-          className={menu === "Rakhi Collection" ? "active" : ""}
+        </Link>
+
+        <a
+          href="#rakhi-collection"
+          onClick={() => setMenu("Collection")}
+          className={menu === "Collection" ? "active" : ""}
         >
           Rakhi Collection
-        </li>
-        <li
+        </a>
+        <a
+          href="#rakhi-display"
           onClick={() => setMenu("Trending Now")}
           className={menu === "Trending Now" ? "active" : ""}
         >
           Trending Now
-        </li>
-        <li
+        </a>
+        <a
           onClick={() => setMenu("Combo Offer")}
           className={menu === "Combo Offer" ? "active" : ""}
         >
           Combo Offer
-        </li>
-        <li
+        </a>
+        <a
+          href="#footer"
           onClick={() => setMenu("Contact Us")}
           className={menu === "Contact Us" ? "active" : ""}
         >
           Contact Us
-        </li>
+        </a>
       </ul>
 
       <div className="navbar-right">
@@ -45,7 +52,7 @@ const Navbar = () => {
           <img src={assests.basket_icon} alt="" />
           <div className="dot"></div>
         </div>
-        <button>sign in</button>
+        <button onClick={()=>setShowLogin(true)}>sign in</button>
       </div>
     </div>
   );

@@ -6,11 +6,11 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assests.logoo}></img>
-          <p><b>
+          <img src={assests.logoo}/>
+          <p>
             Celebrate the bond of love and protection with Threds of love.
             Handpicked rakhi collections crafted with tradition, trust, and a
-            touch of modern elegance — just for you.</b>
+            touch of modern elegance — just for you.
           </p>
           <div className="footer-social-icons">
             <img src={assests.facebook_icon} alt="" />
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <hr></hr>
-      <p>CopyRight © 2025 <span>Threadsoflove.com </span>- All rights reserved.</p>
+      <p className="footer-copyright">CopyRight © 2025 <span>Threadsoflove.com </span>- All Rights reserved.</p>
     </div>
   );
 };

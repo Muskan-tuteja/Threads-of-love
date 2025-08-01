@@ -58,7 +58,7 @@ import remove_icon_red from './remove_icon_red.png'
 import linkedin_icon from './linkedin_icon.png'
 import facebook_icon from './facebook_icon.png'
 import instagram_icon from './instagram_icon.png'
-// import cross_icon from './cross_icon.png'
+import cross_icon from './cross_icon.png'
 // import selector_icon from './selector_icon.png'
 import rating_starts from './rating_starts.png'
 // import profile_icon from './profile_icon.png'
@@ -83,7 +83,7 @@ export const assests = {
   linkedin_icon,
  instagram_icon,
   facebook_icon,
-  // cross_icon,
+  cross_icon,
   // selector_icon,
   // profile_icon,
   // logout_icon,

@@ -52,3 +52,9 @@
   border: 4px solid white;
   padding: 2px;
 }
+@media (max-width:1050px){
+  .rakhi-collection-text{
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
