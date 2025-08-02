@@ -48,6 +48,12 @@ import gifts_31 from './gifts_31.png'
 import gifts_32 from './gifts_32.png'
 
 
+import combo_1 from './combo_1.png'
+import combo_2 from './combo_2.png'
+import combo_3 from './combo_3.png'
+import combo_4 from './combo_4.png'
+
+
 
 
 import add_icon_white from './add_icon_white.png'
@@ -416,5 +422,49 @@ export const rakhi_collection = [
     },
 
    
+  ]
+  export const combo_list = [
+    {
+       _id: "1",
+      name: "	Traditional",
+      image: combo_1,
+      price: 101,
+      description:"	Rakhi packed with healthy nuts.",
+      Sale:   72,
+       category: " Silver Plated Rakhi"
+
+    },
+    {
+       _id: "2",
+      name: "	Beaded Rakhi",
+      image: combo_2,
+      price: 200,
+      description:"	Rakhi packed with healthy nuts.",
+      Sale:   100,
+       category: " Silver Plated Rakhi"
+
+    },
+    {
+       _id: "3",
+      name: "	Designer Rakhi",
+      image: combo_3,
+      price: 150,
+      description:"	Rakhi packed with healthy nuts.",
+      Sale:   67,
+       category: " Silver Plated Rakhi"
+
+    },
+    {
+       _id: "4",
+      name: "	Thread Rakhi",
+      image: combo_4,
+      price: 190,
+      description:"	Rakhi packed with healthy nuts.",
+      Sale:  110,
+       category: " Silver Plated Rakhi"
+      
+
+
+    }
   ]
   

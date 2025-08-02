@@ -35,6 +35,7 @@ const Navbar = ({setShowLogin}) => {
           Trending Now
         </a>
         <a
+        href="#combo-offer"
           onClick={() => setMenu("Combo Offer")}
           className={menu === "Combo Offer" ? "active" : ""}
         >

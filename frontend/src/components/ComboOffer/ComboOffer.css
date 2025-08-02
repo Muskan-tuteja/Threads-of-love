@@ -1,0 +1,53 @@
+.combo-offer {
+  margin-top: 30px;
+}
+.combo-offer h2 {
+   color: #e8530ef0;
+  font-size: max(3vw, 24px);
+  font-weight: 600;
+  text-align: center;
+}
+.combo-offer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+}
+.combo-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.combo-card .price{
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-bottom: 5px;
+
+}
+
+.combo-card:hover {
+  transform: scale(1.05);
+}
+
+.combo-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.sale-tag {
+  font-size: 20px;
+  color: orange;
+  
+}
+

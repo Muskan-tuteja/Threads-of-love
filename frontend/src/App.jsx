@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import Collection from "./components/Collection/Collection";
 import RakhiDisplay from "./components/RakhiDisplay/RakhiDisplay";
 import Login from "./components/Login/Login";
+import ComboOffer from "./components/ComboOffer/ComboOffer";
+
 
 
 const App = () => {
@@ -40,7 +42,11 @@ const App = () => {
 
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder />} />
+         
+         
         </Routes>
+        <ComboOffer/>
+      
 
         <Footer />
       
