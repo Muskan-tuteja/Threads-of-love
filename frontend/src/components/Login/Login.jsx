@@ -26,7 +26,7 @@ const Login = ({ setShowLogin }) => {
           <input type="email" placeholder="Your email" required></input>
           <input type="password" placeholder="Password" required></input>
         </div>
-        <button>{currState === "sign Up" ? "Create account" : "Login"}</button>
+        <button>{currState==="Sign Up" ? "Create account" : "Login"}</button>
         <div className="login-condition">
           <input type="checkbox" required />
           <p>By Continuing, i agree to the terms of use & privacy policy.</p>
