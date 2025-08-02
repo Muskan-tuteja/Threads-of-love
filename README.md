@@ -35,18 +35,7 @@ This website is specially designed to capture the spirit of **Raksha Bandhan**, 
 
 ---
 
-## 📸 Screenshots
 
-### 🏠 Home Page
-![Home Page](screenshots/homepage.png)
-
-### 🎁 Combo Offers
-![Combo Offers](screenshots/combo.png)
-
-### 📱 Mobile View
-![Mobile](screenshots/mobile.png)
-
----
 
 ## 🚀 How to Run Locally
 
