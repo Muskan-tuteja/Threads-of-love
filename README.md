@@ -1,4 +1,4 @@
-# 🧵 Threads of Love
+#  Threads of Love
 
 A stylish and responsive fashion website built using **React** and **Vite**, showcasing elegant design and smooth user experience.
 
@@ -25,3 +25,5 @@ A stylish and responsive fashion website built using **React** and **Vite**, sho
 npm install
 npm run build
 npm run deploy
+
+
